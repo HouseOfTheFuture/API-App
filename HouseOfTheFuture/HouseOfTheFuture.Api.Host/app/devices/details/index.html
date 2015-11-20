@@ -1,0 +1,10 @@
+﻿<ul>
+    <li ng-repeat="sensor in ctrl.reportData.sensors">
+        {{sensor.name}}
+        <ul>
+            <li ng-repeat="node in sensor.usageNodes">
+                {{node.usagePerHour}}
+            </li>
+        </ul>
+    </li>
+</ul>

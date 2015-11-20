@@ -1,0 +1,7 @@
+﻿<div ui-view>
+    <ul>
+        <li ng-repeat="device in ctrl.devices.devices">
+            <a ui-sref=".Details({deviceId:device.id})">{{device.id}}</a> <a href="javascript:;" ng-click="ctrl.delete(device)">delete</a>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FakeDevice", "FakeDevice\FakeDevice.csproj", "{82964B25-0CD6-4CDE-8247-25851C763808}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FakeProcessor", "FakeProcessor\FakeProcessor.csproj", "{C05B65DC-38C4-4DAA-9874-88C8AB7EFE63}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{82964B25-0CD6-4CDE-8247-25851C763808}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82964B25-0CD6-4CDE-8247-25851C763808}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82964B25-0CD6-4CDE-8247-25851C763808}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82964B25-0CD6-4CDE-8247-25851C763808}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C05B65DC-38C4-4DAA-9874-88C8AB7EFE63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C05B65DC-38C4-4DAA-9874-88C8AB7EFE63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C05B65DC-38C4-4DAA-9874-88C8AB7EFE63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C05B65DC-38C4-4DAA-9874-88C8AB7EFE63}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

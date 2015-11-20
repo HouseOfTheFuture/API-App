@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HouseOfTheFuture.Api.Host", "HouseOfTheFuture.Api.Host\HouseOfTheFuture.Api.Host.csproj", "{3DB067F7-0099-4075-BF34-CC331ABCBE13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HouseOfTheFuture.Api.IntegrationTests", "HouseOfTheFuture.Api.IntegrationTests\HouseOfTheFuture.Api.IntegrationTests.csproj", "{50677AA7-D362-4BDA-991C-AD750F341936}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypescriptGeneration", "TypescriptGeneration\TypescriptGeneration.csproj", "{ADC561A5-B0C8-4A7B-A775-148E867C1664}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HouseOfTheFuture.Api.HubEvents", "HouseOfTheFuture.Api.HubEvents\HouseOfTheFuture.Api.HubEvents.csproj", "{E8CDE79A-C28B-47D3-87B2-607C61BB186D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HouseOfTheFuture.Api", "HouseOfTheFuture.Api\HouseOfTheFuture.Api.csproj", "{7D385244-7CD6-4C5F-8AD5-CC76ECA8BA53}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3DB067F7-0099-4075-BF34-CC331ABCBE13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DB067F7-0099-4075-BF34-CC331ABCBE13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DB067F7-0099-4075-BF34-CC331ABCBE13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DB067F7-0099-4075-BF34-CC331ABCBE13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50677AA7-D362-4BDA-991C-AD750F341936}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50677AA7-D362-4BDA-991C-AD750F341936}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50677AA7-D362-4BDA-991C-AD750F341936}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50677AA7-D362-4BDA-991C-AD750F341936}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADC561A5-B0C8-4A7B-A775-148E867C1664}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADC561A5-B0C8-4A7B-A775-148E867C1664}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADC561A5-B0C8-4A7B-A775-148E867C1664}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADC561A5-B0C8-4A7B-A775-148E867C1664}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8CDE79A-C28B-47D3-87B2-607C61BB186D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8CDE79A-C28B-47D3-87B2-607C61BB186D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8CDE79A-C28B-47D3-87B2-607C61BB186D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8CDE79A-C28B-47D3-87B2-607C61BB186D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D385244-7CD6-4C5F-8AD5-CC76ECA8BA53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D385244-7CD6-4C5F-8AD5-CC76ECA8BA53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D385244-7CD6-4C5F-8AD5-CC76ECA8BA53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D385244-7CD6-4C5F-8AD5-CC76ECA8BA53}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

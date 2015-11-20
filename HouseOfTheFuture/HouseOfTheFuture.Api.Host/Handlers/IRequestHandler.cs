@@ -1,0 +1,7 @@
+namespace HouseOfTheFuture.Api.Host.Handlers
+{
+    public interface IRequestHandler<in TRequest, out TResponse>
+    {
+        TResponse Handle(TRequest request);
+    }
+}
