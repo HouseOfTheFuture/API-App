@@ -73,6 +73,12 @@ gulp.task("templates", function () {
 });
 
 /**
+ * Build
+ */
+gulp.task("build", ["lib", "typescript", "templates"], function () {
+});
+
+/**
  * Watcher
  */
 gulp.task("default", ["lib", "typescript", "templates"], function () {

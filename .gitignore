@@ -216,3 +216,6 @@ ModelManifest.xml
 /HouseOfTheFuture/HouseOfTheFuture.Api.Host/app/**/*.js
 /HouseOfTheFuture/HouseOfTheFuture.Api.Host/app/**/*.js.map
 /HouseOfTheFuture/HouseOfTheFuture.Api.Host/style.css
+/HouseOfTheFuture/HouseOfTheFuture.Api.Host/contracts.generated.js
+/HouseOfTheFuture/HouseOfTheFuture.Api.Host/contracts.generated.js.map
+/HouseOfTheFuture/HouseOfTheFuture.Api.Host/templates.js
