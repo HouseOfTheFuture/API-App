@@ -16,16 +16,16 @@
                 'devices': ["$http", "serviceLocations", ($http: angular.IHttpService, serviceLocations: IServiceLocations) => {
                     var results = <IDevices>{};
                     results.refresh = () => {
-                        serviceLocations.then(x => {
-                            var result = $http.get<test.GetDevicesResponse>(x.devices).then(y => y.data);
-                            results.devicesPromise = result.then(x => {
-                                results.devices = x.devices;
-                                return x.devices;
-                            });
-                            results.syncUrlPromise = result.then(x => {
-                                results.syncUrl = x.links.sync;
-                                return x.links.sync;
-                            });
+                        var result = serviceLocations.then(x => {
+                            return $http.get<test.GetDevicesResponse>(x.devices).then(y => y.data);
+                        });
+                        results.devicesPromise = result.then(x => {
+                            results.devices = x.devices;
+                            return x.devices;
+                        });
+                        results.syncUrlPromise = result.then(x => {
+                            results.syncUrl = x.links.sync;
+                            return x.links.sync;
                         });
                     }
                     results.refresh();

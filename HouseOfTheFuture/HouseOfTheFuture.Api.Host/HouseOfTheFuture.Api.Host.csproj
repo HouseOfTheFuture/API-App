@@ -187,9 +187,9 @@
     <Content Include="Metadata\deploymentTemplates\apiappconfig.azureresource.json" />
     <Content Include="apiapp.json" />
     <Content Include="package.json" />
-    <Content Include="script.js" />
     <Content Include="tsd.json" />
     <Content Include="Properties\webjobs-list.json" />
+    <Content Include="bower.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -239,6 +239,9 @@
     <TypeScriptCompile Include="contracts.generated.ts" />
     <TypeScriptCompile Include="typings\angular-ui-router\angular-ui-router.d.ts" />
     <TypeScriptCompile Include="typings\angularjs\angular.d.ts" />
+    <TypeScriptCompile Include="typings\c3\c3.d.ts" />
+    <TypeScriptCompile Include="typings\chartjs\chart.d.ts" />
+    <TypeScriptCompile Include="typings\d3\d3.d.ts" />
     <TypeScriptCompile Include="typings\jquery\jquery.d.ts" />
     <TypeScriptCompile Include="typings\tsd.d.ts" />
     <TypeScriptCompile Include="typings\underscore\underscore.d.ts" />

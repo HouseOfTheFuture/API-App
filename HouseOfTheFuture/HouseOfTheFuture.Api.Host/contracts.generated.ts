@@ -37,19 +37,9 @@ module HouseOfTheFuture.Api.Host.Controllers {
 		public devices:string;
 		public registerDevice:string;
 	}
-	export class UsageNode {
-		public fromTick:Date;
-		public toTick:Date;
-		public usagePerHour:number;
-	}
-	export class SensorResults {
-		public name:string;
-		public usageNodes:Array<HouseOfTheFuture.Api.Host.Controllers.UsageNode>;
-	}
 	export class GetReportdataResponse {
-		public from:Date;
-		public until:Date;
-		public name:string;
-		public sensors:Array<HouseOfTheFuture.Api.Host.Controllers.SensorResults>;
+		public sensors:Array<string>;
+		public labels:Array<string>;
+		public data:Array<Array<number>>;
 	}
 }

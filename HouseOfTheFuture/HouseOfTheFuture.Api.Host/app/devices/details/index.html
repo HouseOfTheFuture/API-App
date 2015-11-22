@@ -1,10 +1,7 @@
-﻿<ul>
-    <li ng-repeat="sensor in ctrl.reportData.sensors">
-        {{sensor.name}}
-        <ul>
-            <li ng-repeat="node in sensor.usageNodes">
-                {{node.usagePerHour}}
-            </li>
-        </ul>
-    </li>
-</ul>
+﻿<canvas id="line"
+        class="chart chart-line"
+        chart-data="ctrl.reportData.data"
+        chart-labels="ctrl.reportData.labels"
+        chart-legend="false"
+        chart-series="ctrl.reportData.sensors"
+        chart-options="ctrl.options"></canvas>

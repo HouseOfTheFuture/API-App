@@ -10,14 +10,18 @@
                     templateUrl: root + "layout.html",
                     abstract: true
                 })
-                .state("Root.Devices", {
+                .state("Root.Dashboard", {
                     url: "",
+                    template: "dashboard"
+                })
+                .state("Root.Devices", {
+                    url: "devices",
                     templateUrl: root + "devices/index.html",
                     controller: "HouseOfTheFuture.Web.Devices.OverviewController as ctrl",
                     resolve: Devices.Controller.resolve
                 })
                 .state("Root.Devices.Details", {
-                    url: ":deviceId",
+                    url: "/:deviceId",
                     templateUrl: root + "devices/details/index.html",
                     controller: "HouseOfTheFuture.Web.Devices.Details.DetailController as ctrl"
                 });
