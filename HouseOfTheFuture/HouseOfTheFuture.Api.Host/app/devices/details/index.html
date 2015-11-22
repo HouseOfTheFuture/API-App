@@ -1,7 +1,10 @@
-﻿<canvas id="line"
+﻿
+<canvas id="container" width='1200' height='300' class="chart chart-line chart-xl" chart-data="data"
+        chart-options="options" chart-labels="labels"></canvas>
+<hr/>
+<canvas id="line"
         class="chart chart-line"
         chart-data="ctrl.reportData.data"
         chart-labels="ctrl.reportData.labels"
-        chart-legend="false"
         chart-series="ctrl.reportData.sensors"
         chart-options="ctrl.options"></canvas>

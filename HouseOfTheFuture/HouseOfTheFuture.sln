@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HouseOfTheFuture.Api.HubEve
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HouseOfTheFuture.Api", "HouseOfTheFuture.Api\HouseOfTheFuture.Api.csproj", "{7D385244-7CD6-4C5F-8AD5-CC76ECA8BA53}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DummyData", "DummyData\DummyData.csproj", "{D3B6C8EC-5B1D-4EF1-9C3B-11E5B5E870D4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{7D385244-7CD6-4C5F-8AD5-CC76ECA8BA53}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D385244-7CD6-4C5F-8AD5-CC76ECA8BA53}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D385244-7CD6-4C5F-8AD5-CC76ECA8BA53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3B6C8EC-5B1D-4EF1-9C3B-11E5B5E870D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3B6C8EC-5B1D-4EF1-9C3B-11E5B5E870D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3B6C8EC-5B1D-4EF1-9C3B-11E5B5E870D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3B6C8EC-5B1D-4EF1-9C3B-11E5B5E870D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

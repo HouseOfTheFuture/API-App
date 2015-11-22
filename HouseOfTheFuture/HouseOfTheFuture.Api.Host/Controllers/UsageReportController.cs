@@ -22,9 +22,10 @@ namespace HouseOfTheFuture.Api.Host.Controllers
         }
 
         [Route(Name = "Reports::Usage::Get"), HttpGet]
-        public async Task<GetReportdataResponse> Get(Guid hubId, DateTime? from = null, DateTime? until = null)
+        public async Task<GetReportdataResponse> Get(Guid hubId, DateTime? from = null, DateTime? until = null, long? nrOfResults = null)
         {
-            from = from ?? DateTime.UtcNow.AddHours(-1);
+            nrOfResults = (nrOfResults ?? 1920L/2L);
+            from = from ?? DateTime.UtcNow.AddMonths(-1);
             until = until ?? DateTime.UtcNow;
             var hub = await _dataContext.IotHubs.FirstAsync(x => x.Id == hubId);
             var sensors = await _dataContext.IotHubSensors.Where(x => x.HubId == hubId).ToArrayAsync();
@@ -41,7 +42,8 @@ namespace HouseOfTheFuture.Api.Host.Controllers
 
             var sensorData = new List<string>();
             var chunkedSensorData = new List<double[]>();
-            var block = new TimeSpan(0,0,0,1);
+            var total = until.Value - from.Value;
+            var block = new TimeSpan(total.Ticks / nrOfResults.Value);
             var labels = new List<DateTime>();
             for (var t = from.Value; t < until.Value.Subtract(block); t = t.Add(block))
             {
@@ -50,7 +52,7 @@ namespace HouseOfTheFuture.Api.Host.Controllers
             foreach (var iotHubSensor in sensors)
             {
                 sensorData.Add(iotHubSensor.Description);
-                var data = (ticksInRange).GetOrDefault(iotHubSensor.Id);
+                var data = (ticksInRange).GetOrDefault(iotHubSensor.Id) ?? new SensorTick[0];
                 var chunkedData = new List<double>();
                 for (var t = from.Value; t < until.Value.Subtract(block); t = t.Add(block))
                 {
