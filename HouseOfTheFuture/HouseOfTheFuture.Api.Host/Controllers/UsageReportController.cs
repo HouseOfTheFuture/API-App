@@ -1,12 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Web.Http;
 using HouseOfTheFuture.Api.Common;
 using HouseOfTheFuture.Api.Host.Models;
+using Microsoft.AspNet.SignalR;
+using Microsoft.AspNet.SignalR.Infrastructure;
 using TypescriptGeneration;
 
 namespace HouseOfTheFuture.Api.Host.Controllers
@@ -104,7 +108,10 @@ namespace HouseOfTheFuture.Api.Host.Controllers
                 Data = chunkedSensorData.ToArray(),
                 Labels = labels.Select(x => x.ToString()).ToArray()
             };
-
+            Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("en");
+            Thread.CurrentThread.CurrentCulture = CultureInfo.GetCultureInfo("en");
+            var d = GlobalHost.ConnectionManager.GetHubContext<MainHub>();
+                d.Clients.All.helloWorld("test");
             return response;
         }
     }

@@ -5,3 +5,5 @@
 /// <reference path="c3/c3.d.ts" />
 /// <reference path="d3/d3.d.ts" />
 /// <reference path="chartjs/chart.d.ts" />
+/// <reference path="signalr/signalr.d.ts" />
+/// <reference path="angular-signalr-hub/angular-signalr-hub.d.ts" />

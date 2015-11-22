@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using HouseOfTheFuture.Api.Host.Models;
+using Microsoft.AspNet.SignalR;
+using Microsoft.AspNet.SignalR.Infrastructure;
 using Microsoft.Azure;
 using Microsoft.Azure.WebJobs;
 using Microsoft.ServiceBus.Messaging;
@@ -27,6 +29,11 @@ namespace HouseOfTheFuture.Api.HubEvents
 
         public static void Main()
         {
+            new ConnectionManager(new DefaultDependencyResolver()).GetHubContext("main").Clients.All.HelloWorld("test");
+
+            //var ctx = GlobalHost.ConnectionManager.GetHubContext<yourhub>();
+            //ctx.Clients.Client(connectionId).< your method >
+
             var cloudStorage = CloudStorageAccount.Parse(ConfigurationManager.ConnectionStrings["DataStorage"].ConnectionString);
             var tableClient = cloudStorage.CreateCloudTableClient();
             _tickEvents = tableClient.GetTableReference("tickevents");

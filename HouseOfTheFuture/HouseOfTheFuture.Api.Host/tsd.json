@@ -25,6 +25,12 @@
     },
     "chartjs/chart.d.ts": {
       "commit": "fa04c80f4a889613b96cb4f283848c61a9f64233"
+    },
+    "signalr/signalr.d.ts": {
+      "commit": "fa04c80f4a889613b96cb4f283848c61a9f64233"
+    },
+    "angular-signalr-hub/angular-signalr-hub.d.ts": {
+      "commit": "fa04c80f4a889613b96cb4f283848c61a9f64233"
     }
   }
 }

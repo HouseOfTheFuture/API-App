@@ -1,8 +1,10 @@
 ﻿using System.Web.Http;
+using Microsoft.AspNet.SignalR;
+using Microsoft.AspNet.SignalR.Infrastructure;
 
 namespace HouseOfTheFuture.Api.Host.Controllers
 {
-    [Authorize]
+    [System.Web.Http.Authorize]
     [RoutePrefix("test")]
     public class TestController : ApiController
     {
