@@ -10,8 +10,11 @@ using System.Threading.Tasks;
 using HouseOfTheFuture.Api.Host.Models;
 using Microsoft.AspNet.SignalR;
 using Microsoft.AspNet.SignalR.Infrastructure;
+using Microsoft.AspNet.SignalR.Messaging;
+using Microsoft.AspNet.SignalR.ServiceBus;
 using Microsoft.Azure;
 using Microsoft.Azure.WebJobs;
+using Microsoft.ServiceBus;
 using Microsoft.ServiceBus.Messaging;
 using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Auth;
@@ -29,8 +32,21 @@ namespace HouseOfTheFuture.Api.HubEvents
 
         public static void Main()
         {
-            new ConnectionManager(new DefaultDependencyResolver()).GetHubContext("main").Clients.All.HelloWorld("test");
-
+     //       string connectionString =
+     //ConfigurationManager.ConnectionStrings["RootManageSharedAccessKey"].ConnectionString;
+     //       Action<BrokeredMessage> callback = x =>
+     //       {
+                
+     //       };
+     //       var clients = new List<SubscriptionClient>();
+     //       for (int i = 0; i < 5; i++)
+     //       {
+     //           var client = TopicClient.CreateFromConnectionString(connectionString, "signalr_topic_push_" + i);
+     //           client.
+     //           client.OnMessage(callback);
+     //           clients.Add(client);
+     //       }
+     //       Console.ReadLine();
             //var ctx = GlobalHost.ConnectionManager.GetHubContext<yourhub>();
             //ctx.Clients.Client(connectionId).< your method >
 

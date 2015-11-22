@@ -20,7 +20,7 @@ namespace HouseOfTheFuture.Api.Host
             AuthenticationConfiguration.Configure(app);
             WebApiConfiguration.Configure(app, config);
             SwaggerConfiguration.Configure(config);
-            GlobalHost.DependencyResolver.UseServiceBus(ConfigurationManager.ConnectionStrings["RootManageSharedAccessKey"].ConnectionString, "hotf-signalr");
+            GlobalHost.DependencyResolver.UseServiceBus(ConfigurationManager.ConnectionStrings["RootManageSharedAccessKey"].ConnectionString, "push");
             app.MapSignalR();
         }
     }
