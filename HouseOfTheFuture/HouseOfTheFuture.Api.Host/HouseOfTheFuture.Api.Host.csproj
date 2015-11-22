@@ -183,10 +183,13 @@
     <Content Include="app\devices\details\index.html" />
     <Content Include="gulpfile.js" />
     <Content Include="index.html" />
+    <Content Include="lib\vendor.css" />
+    <Content Include="lib\vendor.js" />
     <Content Include="packages.config" />
     <Content Include="Metadata\deploymentTemplates\apiappconfig.azureresource.json" />
     <Content Include="apiapp.json" />
     <Content Include="package.json" />
+    <Content Include="script.js" />
     <Content Include="tsd.json" />
     <Content Include="Properties\webjobs-list.json" />
     <Content Include="bower.json" />
